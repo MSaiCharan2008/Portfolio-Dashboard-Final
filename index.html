@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Signs of student life</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site-header">
+		<a class="site-title" href="#top" aria-label="Signs of student life home">Signs of Student Life</a>
+		<nav class="section-nav" aria-label="Gallery sections" role="tablist">
+			<button class="section-nav__button" type="button" role="tab" aria-selected="true" aria-controls="section-focus" data-section-tab="section-focus">01 Focus</button>
+			<button class="section-nav__button" type="button" role="tab" aria-selected="false" aria-controls="section-routine" data-section-tab="section-routine">02 Routine</button>
+			<button class="section-nav__button" type="button" role="tab" aria-selected="false" aria-controls="section-culture" data-section-tab="section-culture">03 Culture</button>
+		</nav>
+		<button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-theme-toggle>
+			<span aria-hidden="true">&#9788;</span>
+			<span class="theme-toggle__label">Light mode</span>
+		</button>
+	</header>
+
+	<main id="top">
+		<section class="gallery-section gallery-section--desk" id="section-focus" role="tabpanel" aria-labelledby="intellectual-focus-heading">
+			<div class="section-heading">
+				<p class="section-number">01</p>
+				<h1 id="intellectual-focus-heading">Intellectual Focus</h1>
+			</div>
+			<p class="section-subtitle">Where the work happens.</p>
+			<div class="workspace-grid study-desk">
+				<figure class="photo-card">
+					<button class="photo-card__trigger" type="button" data-lightbox="true" data-title="Logic proofs">
+						<img src="images/Logic Proofs.jpeg" alt="Laptop displaying code beside an open notebook with handwritten logic proofs" loading="lazy">
+					</button>
+					<figcaption>Logic proofs</figcaption>
+				</figure>
+				<figure class="photo-card">
+					<button class="photo-card__trigger" type="button" data-lightbox="true" data-title="Window desk">
+						<img src="images/Window Desk.jpeg" alt="A study desk with notebooks and papers facing a multi-pane window" loading="lazy">
+					</button>
+					<figcaption>Window desk</figcaption>
+				</figure>
+				<figure class="photo-card">
+					<button class="photo-card__trigger" type="button" data-lightbox="true" data-title="Corner desk">
+						<img src="images/Corner Desk.jpeg" alt="Compact corner study desk with a laptop, mouse, and backpack on the chair" loading="lazy">
+					</button>
+					<figcaption>Corner desk</figcaption>
+				</figure>
+				<figure class="photo-card">
+					<button class="photo-card__trigger" type="button" data-lightbox="true" data-title="Balcony work station">
+						<img src="images/Pink Flask.jpeg" alt="Outdoor balcony table with laptops, backpack, and a pink flask" loading="lazy">
+					</button>
+					<figcaption>Balcony work station</figcaption>
+				</figure>
+				<figure class="photo-card">
+					<button class="photo-card__trigger" type="button" data-lightbox="true" data-title="Textbook bookcase">
+						<img src="images/Textbook Bookcase.jpeg" alt="Bookcase tightly packed with engineering and science textbooks" loading="lazy">
+					</button>
+					<figcaption>Textbook bookcase</figcaption>
+				</figure>
+			</div>
+		</section>
+
+		<section class="gallery-section" id="section-routine" role="tabpanel" aria-labelledby="daily-survival-heading">
+			<div class="section-heading">
+				<p class="section-number">02</p>
+				<h2 id="daily-survival-heading">Daily Survival &amp; Routine</h2>
+			</div>
+			<p class="routine-subtitle">From the first hallway to the last chore.</p>
+			<div class="routine-scroll-area" data-routine-area>
+				<div class="routine-sticky">
+					<div class="routine-meta" aria-live="polite">
+						<time class="routine-time" data-routine-time>08:10 AM</time>
+						<span class="routine-moment" data-routine-moment>First steps</span>
+					</div>
+					<div class="routine-progress" aria-label="Progress through the day">
+						<span class="routine-progress__line"></span>
+						<span class="routine-progress__dot is-active" data-routine-dot="0"></span>
+						<span class="routine-progress__dot" data-routine-dot="1"></span>
+						<span class="routine-progress__dot" data-routine-dot="2"></span>
+						<span class="routine-progress__dot" data-routine-dot="3"></span>
+						<span class="routine-progress__dot" data-routine-dot="4"></span>
+					</div>
+					<div class="routine-viewport">
+						<div class="routine-track" data-routine-track>
+							<figure class="routine-card" data-routine-card="0" style="--routine-rotation: -3deg;">
+								<button class="photo-card__trigger" type="button" data-lightbox="true" data-title="Shoes in the hallway">
+									<img src="images/Shoes in the Hallway.jpeg" alt="Footwear lined up outside dorm room doors along a long green hallway" loading="lazy">
+								</button>
+								<figcaption><span>08:10 AM</span>First steps</figcaption>
+							</figure>
+							<figure class="routine-card" data-routine-card="1" style="--routine-rotation: 4deg;">
+								<button class="photo-card__trigger" type="button" data-lightbox="true" data-title="Open locker">
+									<img src="images/Open Locker.jpeg" alt="Open metal locker containing stacked engineering textbooks and spiral notebooks" loading="lazy">
+								</button>
+								<figcaption><span>10:45 AM</span>Between classes</figcaption>
+							</figure>
+							<figure class="routine-card" data-routine-card="2" style="--routine-rotation: -2deg;">
+								<button class="photo-card__trigger" type="button" data-lightbox="true" data-title="Cafeteria tray">
+									<img src="images/Cafeteria Tray.jpeg" alt="Cafeteria table with food trays, soda can, and newspaper clippings on the wall" loading="lazy">
+								</button>
+								<figcaption><span>01:20 PM</span>Lunch break</figcaption>
+							</figure>
+							<figure class="routine-card" data-routine-card="3" style="--routine-rotation: 3deg;">
+								<button class="photo-card__trigger" type="button" data-lightbox="true" data-title="Pasta lunch">
+									<img src="images/Pasta Lunch.jpeg" alt="Tiffin container of penne pasta with a jute bag on a dining table" loading="lazy">
+								</button>
+								<figcaption><span>06:40 PM</span>Dinner</figcaption>
+							</figure>
+							<figure class="routine-card" data-routine-card="4" style="--routine-rotation: -4deg;">
+								<button class="photo-card__trigger" type="button" data-lightbox="true" data-title="Laundry room">
+									<img src="images/Laundry Room.jpeg" alt="Piles of sorted laundry clothes and detergent bottle on a table in front of washing machines" loading="lazy">
+								</button>
+								<figcaption><span>11:58 PM</span>End-of-day chores</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="gallery-section gallery-section--board" id="section-culture" role="tabpanel" aria-labelledby="campus-culture-heading">
+			<div class="section-heading">
+				<p class="section-number">03</p>
+				<h2 id="campus-culture-heading">Expression &amp; Campus Culture</h2>
+			</div>
+			<p class="section-subtitle">The things students leave behind.</p>
+			<div class="notice-board-controls">
+				<button class="notice-shuffle" type="button" data-notice-shuffle>Shuffle board <span aria-hidden="true">↗</span></button>
+			</div>
+			<div class="notice-board" data-notice-board>
+				<span class="notice-board__label" aria-hidden="true">Campus / 2026</span>
+				<span class="notice-note notice-note--1" aria-hidden="true">buy pens</span>
+				<span class="notice-note notice-note--2" aria-hidden="true">2pm?</span>
+				<span class="notice-note notice-note--3" aria-hidden="true">DON'T FORGET</span>
+				<span class="notice-note notice-note--4" aria-hidden="true">meeting -&gt; 4</span>
+				<span class="notice-note notice-note--5" aria-hidden="true">read ch. 4</span>
+				<span class="notice-note notice-note--6" aria-hidden="true">draft 02</span>
+				<figure class="notice-item">
+					<span class="notice-pin notice-pin--gold" aria-hidden="true"></span>
+					<button class="photo-card__trigger" type="button" data-lightbox="true" data-title="Everyday backpack">
+						<img src="images/Everyday Backpack.jpeg" alt="Open wooden cubby shelves filled with various student backpacks" loading="lazy">
+					</button>
+					<figcaption>Everyday backpack</figcaption>
+				</figure>
+				<figure class="notice-item">
+					<span class="notice-pin notice-pin--blue" aria-hidden="true"></span>
+					<button class="photo-card__trigger" type="button" data-lightbox="true" data-title="Music setup">
+						<img src="images/Music Setup.jpeg" alt="Music room with drum set, electronic keyboards, instruments, and plastic stools" loading="lazy">
+					</button>
+					<figcaption>Music setup</figcaption>
+				</figure>
+				<figure class="notice-item">
+					<span class="notice-pin notice-pin--red" aria-hidden="true"></span>
+					<button class="photo-card__trigger" type="button" data-lightbox="true" data-title="Design workshop poster">
+						<img src="images/Design Workshop Poster.jpeg" alt="Framed poster announcing a 3-day Canva design workshop" loading="lazy">
+					</button>
+					<figcaption>Design workshop poster</figcaption>
+				</figure>
+				<figure class="notice-item">
+					<span class="notice-pin notice-pin--black" aria-hidden="true"></span>
+					<button class="photo-card__trigger" type="button" data-lightbox="true" data-title="Notice board">
+						<img src="images/Notice Board.jpeg" alt="Glass bulletin board filled with student notices, posters, and club flyers" loading="lazy">
+					</button>
+					<figcaption>Notice board</figcaption>
+				</figure>
+			</div>
+		</section>
+	</main>
+
+	<div class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden data-lightbox-dialog>
+		<div class="lightbox__backdrop" data-lightbox-close></div>
+		<div class="lightbox__content">
+			<button class="lightbox__close" type="button" aria-label="Close image viewer" data-lightbox-close>&times;</button>
+			<img class="lightbox__image" src="" alt="" data-lightbox-image>
+			<p class="lightbox__caption" id="lightbox-title" data-lightbox-title></p>
+		</div>
+	</div>
+
+	<footer class="site-footer">
+		<p>&copy; 2026 Signs of student life</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
