@@ -38,7 +38,9 @@ const activateSectionTab = (sectionId, shouldFocus = false) => {
 
 	gallerySections.forEach((section) => {
 		section.hidden = section.id !== sectionId;
-		section.classList.toggle('is-active', section.id === sectionId);
+		const isActive = section.id === sectionId;
+		section.classList.toggle('is-active', isActive);
+		if (isActive) section.classList.add('is-visible');
 	});
 };
 
